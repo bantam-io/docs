@@ -3,6 +3,7 @@
 - [Intro to Function Creation](#Intro-to-Function-Creation)
 - [Responding with a URL](#Responding-With-A-URL)
 
+
 ## Intro to Function Creation
 
 To make building functions easier use the bantam cli.
