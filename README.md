@@ -66,6 +66,7 @@ Great.
 As a function developer, you just respond like this:
 
 ```js
+
 cb(null, {
   proxyResponse: {
     statusCode: 302,
@@ -75,6 +76,7 @@ cb(null, {
     body: '',
   },
 });
+
 ```
 
 If they use `bantam.run` instead of going to the `bantam.url`, that's okay - we figure that out and just respond with the URL as the result.
