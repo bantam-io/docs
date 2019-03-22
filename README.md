@@ -5,7 +5,7 @@
 
 ## Intro to Function Creation
 
-To make building functions easier use the bantam cli…
+To make building functions easier use the bantam cli.
 
 https://www.npmjs.com/package/@bantam-io/cli
 
