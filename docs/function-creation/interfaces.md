@@ -28,8 +28,8 @@ When the user is redirected, we provide a temporary token parameter to authentic
 ```js
 bantam
   .run('@publishing/user-auth', {
-    function: '@my-bundle/my-function',
-    token: '<SOME_TOKEN>',
+    'function': '@my-bundle/my-function',
+    'token': '<SOME_TOKEN>',
   })
   .then(
     userId => {
