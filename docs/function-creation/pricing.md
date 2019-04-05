@@ -36,14 +36,14 @@ To determine what your `publicPrice` should be, you first must pick one of the b
 Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
 
 ```
-128   /   5     /  0.0000108688
-128   /   30    /  0.00006421280000000002
+128    /   5     /  0.0000108688
+128    /   30    /  0.00006421280000000002
 
-256   /   5     /  0.000021537600000000002
-256   /   30    /  0.00012822560000000003
+256    /   5     /  0.000021537600000000002
+256    /   30    /  0.00012822560000000003
 
-512   /   5     /  0.0000428752
-512   /   30    /  0.00025625120000000005
+512    /   5     /  0.0000428752
+512    /   30    /  0.00025625120000000005
 
 1024   /   5     /  0.00008555040000000001
 1024   /   30    /  0.0005123024000000001
@@ -69,4 +69,4 @@ Then, depending on the `publicPrice` your choose, your `bantam` config object wo
 
 Once your have finalized your function, running `bantam publish` would submit your new pricing structure.
 
-Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will be not be public to all Bantam users. To make your function `PUBLIC`,set that `true` before going running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
+Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will be not be public to all Bantam users. To make your function `PUBLIC`,set that `true` before running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
