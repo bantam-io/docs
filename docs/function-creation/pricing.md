@@ -19,7 +19,6 @@ After getting logged in, creating a bundle, and getting the Bantam CLI installed
   "bantam": {
     "memory": 256,
     "timeout": 30,
-    "public": false,
     "publicPrice": 0.05
   },
   "author": "me",
@@ -64,11 +63,10 @@ Then, depending on the `publicPrice` your choose, your `bantam` config object wo
 "bantam": {
     "memory": 128,
     "timeout": 30,
-    "public": false,
     "publicPrice": 0.05
   },
 ```
 
 Once your have finalized your function, running `bantam publish` would submit your new pricing structure.
 
-Keep in mind when submitting a config with the bantam config object `{ "bantam": { public: true } }`, your function will be live and public to all Bantam users. To keep your function private for testing, just make sure to set that false before going live. For more information about how public vs private functions, check out our [docs here](../function-creation/public-functions.md)
+Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will be not be public to all Bantam users. To make your function `PUBLIC`,set that `true` before going running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
