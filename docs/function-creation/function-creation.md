@@ -84,3 +84,16 @@ Options:
 -v, --version              output the version number
 -h, --help                 output usage information
 ```
+
+## Function Monitoring
+
+We provide some monitoring. For more advanced monitoring, we recommend [iopipe.com](https://www.iopipe.com/). You can easily integrate with the bantam handler like this:
+
+```
+exports.handler = bantamHandler({
+  ioPipeKey: 'YOUR_IO_PIPE_KEY'
+})
+.on('default', (userId, args, callback) => {
+  callback(null, args);
+})
+```
