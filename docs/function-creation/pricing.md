@@ -20,7 +20,7 @@ After getting logged in, creating a bundle, and getting the Bantam CLI installed
     "memory": 256,
     "timeout": 30,
     "public": true,
-    "publicPrice": 0.523
+    "publicPrice": 0.05
   },
   "author": "me",
   "license": "ISC",
