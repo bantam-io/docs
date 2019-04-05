@@ -36,23 +36,23 @@ To determine what your `publicPrice` should be, you first must pick one of the b
 Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
 
 ```
-128    /   5     /  0.0000108688
-128    /   30    /  0.00006421280000000002
+128    /   5     /  0.00006067
+128    /   30    /  0.00011401
 
-256    /   5     /  0.000021537600000000002
-256    /   30    /  0.00012822560000000003
+256    /   5     /  0.00007134
+256    /   30    /  0.00017803
 
-512    /   5     /  0.0000428752
-512    /   30    /  0.00025625120000000005
+512    /   5     /  0.00009268
+512    /   30    /  0.00030605
 
-1024   /   5     /  0.00008555040000000001
-1024   /   30    /  0.0005123024000000001
+1024   /   5     /  0.00013535
+1024   /   30    /  0.0005621
 
-2048   /   5     /  0.0001709008
-2048   /   30    /  0.0010244048
+2048   /   5     /  0.0002207
+2048   /   30    /  0.0010742
 
-3008   /   5     /  0.0002509168
-3008   /   30    /  0.0015045008
+3008   /   5     /  0.00030072
+3008   /   30    /  0.0015543
 ```
 
 If you were to choose from the pricing structure above, a memory of `128`, and a timeout of `30` seconds, you would then do a lookup on the pricing structure, to find the minimum `publicPrice` you could set your function to charge would be `0.00006421280000000002`.
