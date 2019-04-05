@@ -2,7 +2,7 @@
 
 ## Setting Price with your Bantam Config File (package.json)
 
-After getting logged in, creating a bundle, and getting the Bantam CLI installed, then running `bantam init`. Your function's package.json file will allow you to set the memory, timeout, and pricing of your function.
+After getting logged in, creating a bundle, getting the Bantam CLI installed, and running `bantam init`, your function's package.json file will allow you to set the memory, timeout, and pricing of your function.
 
 <br/>
 #### Example function package.json:
