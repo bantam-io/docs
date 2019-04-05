@@ -82,12 +82,3 @@ Then, depending on the `publicPrice` your choose, your `bantam` config object wo
 ```
 
 Once your have finalized your function, running `bantam publish` would submit your new pricing structure.
-
-### FYI:
-
-<!--
-QUESTIONS:
-WILL the fucntion publish fail without pricing if set to private, for testing?
-
-ARE THESE IN THE PRICING STRUCTURE SET BY US, IS THIS OUR MARGIN?
- -->
