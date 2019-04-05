@@ -12,7 +12,7 @@ Example interfaces include the built in [@simple/log](https://bantam.io/function
 
 This is the URL that the "Open in Interface" button will redirect the user to.
 
-```javascript
+```js
 inside package.json...
   "bantam": {
     "webInterface": "https://runningwindow.bantam.io/dashboard",
@@ -25,11 +25,11 @@ When the user is redirected, we provide a temporary token parameter to authentic
 
 ### Step 2: Authenticate the user with the provided token
 
-```javascript
+```js
 bantam
   .run('@publishing/user-auth', {
-    function: '@my-bundle/my-function',
-    token: '<SOME_TOKEN>',
+    'function': '@my-bundle/my-function',
+    'token': '<SOME_TOKEN>',
   })
   .then(
     userId => {
