@@ -31,7 +31,7 @@ After getting logged in, creating a bundle, getting the Bantam CLI installed, an
 To determine what your `publicPrice` should be, you first must pick one of the below combinations of memory and timeout to find the max charge you will incure before your function times-out.
 
 <br/>
-#### Bantam pricing structure:
+## Bantam pricing structure:
 
 Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
 
