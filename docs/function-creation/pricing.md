@@ -4,6 +4,7 @@
 
 After getting logged in, creating a bundle, and getting the Bantam CLI installed, then running `bantam init`. Your function's package.json file will allow you to set the memory, timeout, and pricing of your function.
 
+<br/>
 #### Example function package.json:
 
 ```
@@ -30,8 +31,7 @@ After getting logged in, creating a bundle, and getting the Bantam CLI installed
 
 To determine what your `publicPrice` should be, you first must pick one of the below combinations of memory and timeout to find the max charge you will incure before your function times-out.
 
-`{ "memory": { "timeout": price } }`
-
+<br/>
 #### Bantam pricing structure:
 
 Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
