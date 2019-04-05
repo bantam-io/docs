@@ -2,7 +2,7 @@
 
 By providing some simple configurations, you can add a "Try it Out!" tab to the Bantam function dashboard page for users to test your function.
 
-In order to generate these examples, all you need to do is add am `examples` array underneath a `bantam` key in the `package.json` file.
+In order to generate these examples, all you need to do is add an `examples` array underneath a `bantam` key in the `package.json` file.
 
 When the function is published next, the "Try it Out!" tab will be activated.
 
