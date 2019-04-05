@@ -19,7 +19,6 @@ After getting logged in, creating a bundle, getting the Bantam CLI installed, an
   "bantam": {
     "memory": 256,
     "timeout": 30,
-    "public": false,
     "publicPrice": 0.05
   },
   "author": "me",
@@ -32,19 +31,19 @@ After getting logged in, creating a bundle, getting the Bantam CLI installed, an
 To determine what your `publicPrice` should be, you first must pick one of the below combinations of memory and timeout to find the max charge you will incure before your function times-out.
 
 <br/>
-#### Bantam pricing structure:
+## Bantam pricing structure:
 
 Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
 
 ```
-128   /   5     /  0.0000108688
-128   /   30    /  0.00006421280000000002
+128    /   5     /  0.0000108688
+128    /   30    /  0.00006421280000000002
 
-256   /   5     /  0.000021537600000000002
-256   /   30    /  0.00012822560000000003
+256    /   5     /  0.000021537600000000002
+256    /   30    /  0.00012822560000000003
 
-512   /   5     /  0.0000428752
-512   /   30    /  0.00025625120000000005
+512    /   5     /  0.0000428752
+512    /   30    /  0.00025625120000000005
 
 1024   /   5     /  0.00008555040000000001
 1024   /   30    /  0.0005123024000000001
@@ -64,11 +63,10 @@ Then, depending on the `publicPrice` your choose, your `bantam` config object wo
 "bantam": {
     "memory": 128,
     "timeout": 30,
-    "public": false,
     "publicPrice": 0.05
   },
 ```
 
 Once your have finalized your function, running `bantam publish` would submit your new pricing structure.
 
-Keep in mind when submitting a config with the bantam config object `{ "bantam": { public: true } }`, your function will be live and public to all Bantam users. To keep your function private for testing, just make sure to set that false before going live. For more information about how public vs private functions, check out our [docs here](../function-creation/public-functions.md)
+Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will be not be public to all Bantam users. To make your function `PUBLIC`,set that `true` before running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
