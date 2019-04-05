@@ -1,3 +1,3 @@
-# Welcome to the Bantam docs
+# Introduction
 
 ## What is Bantam?
