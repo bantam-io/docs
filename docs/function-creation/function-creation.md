@@ -2,7 +2,7 @@
 
 ## Creating functions with the Bantam CLI
 
-The Bantam CLI can be found at https://www.npmjs.com/package/@bantam-io/cli
+The Bantam CLI can be found at [https://www.npmjs.com/package/@bantam-io/cli](https://www.npmjs.com/package/@bantam-io/cli)
 
 The primary use of this CLI is to create, test and publish your own functions. Created functions can be for [private or public](public-functions.md) use and can even be monetized (more info on that [here](making-money.md)).
 

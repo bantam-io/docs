@@ -4,7 +4,7 @@ By providing some simple configurations, you can add a "Try it Out!" tab to the 
 
 In order to generate these examples, all you need to do is add an `examples` array underneath a `bantam` key in the `package.json` file.
 
-When the function is published next, the "Try it Out!" tab will be activated.
+When the function is published next, the "Try it Out!" tab will be activated. [See here](https://bantam.io/functions/@images/metadata) an example of the "Try it Out!" tab.
 
 Example:
 
