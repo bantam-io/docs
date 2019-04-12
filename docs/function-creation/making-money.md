@@ -2,7 +2,7 @@
 
 ## Pricing
 
-To set up pricing and start making money, check out our [pricing docs](../function-creation/making-money.md).
+To set up pricing and start making money, check out our [pricing docs](../function-creation/pricing.md).
 
 ## Getting Paid
 
