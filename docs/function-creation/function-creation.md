@@ -25,14 +25,25 @@ bantam configure
 ```
 
 ### Step 3: Create a local directory, init and write a new function
+Create and navigate to the directory.
+```
+mkdir my-project
+cd my-project/
+```
 
-This step will prompt you for the `@bundle` and `function name`. Our functions are formatted like this `@bundle-name/function-name`. Even further, our functions can have `methods` - `@bundle-name/function-name/method-name`. A method is basically an option on the same function.
+This next step will prompt you for the `@bundle` and `function name`. Our functions are formatted like this `@bundle-name/function-name`. Even further, our functions can have `methods` - `@bundle-name/function-name/method-name`. A method is basically an option on the same function.
 
 > Be sure to use a bundle identifier that you own and have created through the dashboard [here](https://bantam.io/develop)
 
 ```
-cd my-project/
 bantam init
+```
+
+Once you have answered the questions, navigate into the fuction and run `npm install`.
+
+```
+cd \@bundle\function-name
+npm install
 ```
 
 Here is some example code for a function inside of the `index.js` file:
@@ -80,9 +91,9 @@ bantam publish
 
 ### Step 6: Make your function PUBLIC
 
-Now that you have a published function, you should it in the functions tab of the dashboard.
+Now that you have a published function, you should find it in the Develop Functions tab of the dashboard.
 
-Click through to your new function's page, and navigate to the 'administration' tab on left-hand menu. There your can allow your function to be published publicly. This will require your to re-publish your function.
+Click through to your new function's page, and navigate to the 'administration' tab on left-hand menu, then click 'settings'. There your can allow your function to be published publicly, by clicking 'Enable Public Deploy'. This will require your to re-publish your function.
 
 ## Bantam CLI Usage
 
