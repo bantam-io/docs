@@ -1,11 +1,8 @@
 # Pricing
 
-## Setting Price with your Bantam Config File (package.json)
-
-After getting logged in, creating a bundle, getting the Bantam CLI installed, and running `bantam init`, your function's package.json file will allow you to set the memory, timeout, and pricing of your function.
+Price per call is set in the package.json file.  
 
 <br/>
-#### Example function package.json:
 
 ```
 {
@@ -28,9 +25,10 @@ After getting logged in, creating a bundle, getting the Bantam CLI installed, an
 }
 ```
 
-To determine what your `publicPrice` should be, you first must pick one of the below combinations of memory and timeout to find the max charge you will incure before your function times-out.
+To determine what your minimum `publicPrice` should be, choose a combinations of memory and timeout to find the max charge you will incure before your function times-out. NOTE: If your function calls other Bantam functions (for example `@simple/file-download`), you should include those fees in your price.
 
 <br/>
+
 ## Bantam pricing structure:
 
 Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
@@ -55,9 +53,9 @@ Memory &nbsp; / &nbsp; Timeout &nbsp; / &nbsp; Price
 3008   /   30    /  0.0015543
 ```
 
-If you were to choose from the pricing structure above, a memory of `128`, and a timeout of `30` seconds, you would then do a lookup on the pricing structure, to find the minimum `publicPrice` you could set your function to charge would be `0.00006421280000000002`.
+The minimum allowed `publicPrice` is the Bantam price per call.  For example, if your function needs `128` megabytes of memory with a `30` second timeout, then the `publicPrice` must be at least `0.00011401`.
 
-Then, depending on the `publicPrice` your choose, your `bantam` config object would then look something like:
+Then, depending on the `publicPrice` you choose, your `bantam` config object would then look something like:
 
 ```
 "bantam": {
@@ -67,6 +65,6 @@ Then, depending on the `publicPrice` your choose, your `bantam` config object wo
   },
 ```
 
-Once your have finalized your function, running `bantam publish` would submit your new pricing structure.
+Once your have finalized your function, running `bantam publish` will submit your new pricing structure.
 
-Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will be not be public to all Bantam users. To make your function `PUBLIC`,set that `true` before running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
+Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will <b>not</b> be public to Bantam users. To make your function `PUBLIC`,set `public` to `true` before running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
