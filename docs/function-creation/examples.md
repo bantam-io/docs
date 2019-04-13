@@ -1,10 +1,15 @@
+# Usage
+
+Place your functions instruction in the README file.  It will appear on the function's `Usage` tab. 
+
+
 # Examples
 
 By providing some simple configurations, you can add a "Try it Out!" tab to the Bantam function dashboard page for users to test your function.
 
 In order to generate these examples, all you need to do is add an `examples` array underneath a `bantam` key in the `package.json` file.
 
-When the function is published next, the "Try it Out!" tab will be activated. [See here](https://bantam.io/functions/@images/metadata) an example of the "Try it Out!" tab.
+When the function is published next, the "Try it Out!" tab will be activated. [See here](https://bantam.io/functions/@images/modification) an example of the "Try it Out!" tab.
 
 Example:
 
@@ -62,4 +67,4 @@ Each object inside of the examples array has the following arguments:
   - `JSON`: The response will be in JSON format.
   - `image`: The response will render the returned image.
 - **method** - _(optional, string)_ - If your function has multiple methods, this will preset the example to call that method. If left blank, the default method will be invoked.
-- **arguments** - _(default = {}, object)_ - This object containers all of the arguments used within the function handler you wrote. It will be the default set of arguments placed in the code editor within the page.
+- **arguments** - _(default = {}, object)_ - This object contains all of the arguments used within the function handler. It will be the default set of arguments placed in the code editor within the page.
