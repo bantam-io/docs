@@ -1,8 +1,6 @@
-# Public and Private Functions Overview
+# Public and Private Functions
 
-## Private Functions
-
-Upon it's creation (running `bantam init` with the Bantam CLI), a function is initially set to private.
+Upon a functions creation (running `bantam init` with the Bantam CLI), the function is set to private (`"bantam": { "public": false }`). <i>Note: The top level `"private"` value, it is unrelated to Bantam. </i>
 
 ```
 {
@@ -14,6 +12,8 @@ Upon it's creation (running `bantam init` with the Bantam CLI), a function is in
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bantam": {
+    "memory": 128,
+    "timeout": 5,
     "public": false
   },
   "author": "me",
@@ -22,18 +22,32 @@ Upon it's creation (running `bantam init` with the Bantam CLI), a function is in
   "dependencies": {}
 }
 ```
-
-You can freely test and publish your functions without making them `PUBLIC`. To test a function locally use the Bantam CLI command `bantam test` within the directory of a function. Your are also able to incorporate your functions within your own projects or client work.
+By keeping your function non-public, only function calls using your API keys can call the function. Therefore, you can test, publish and incorporate your function into your projects or client work without making your function `public`.
 
 ## Public Functions
 
-If you are building or have a bundle of functions that you would like to make public for anyone integrated with Bantam to use. To publish a function to the masses, in the Bantam Config object in the function's `package.json`, simply add `"bantam": { "public": true }` to the `bantam` data object.
+To publish a function for other developers to consume requires 3 steps. The extra steps are to protect you from mistakenly making a function avaiable for public use.
 
-To publish a public function, you must have the pricing, memory, timeout, and public price setup. For more information on how to do that. Checkout the [pricing docs](../function-creation/pricing.md);
+1. `publish` the function to Bantam
+2. 'Enable Public Deploy' via the Dashboard
+3. Re-publish the function as public
 
-For more information about how to monetize your functions, check out our [docs here](../function-creation/making-money.md)
+#### 1. Publish the function:
 
-To provide other users the ability to 'try-out' your functions, check out our [examples docs here](../function-creation/examples.md)
+`publish` the function to Bantam. [Additional info](https://github.com/bantam-io/docs/blob/master/docs/function-creation/function-creation.md#step-6-make-your-function-public)
+
+#### 2. Enable Public Deploy
+
+Once your function is deployed to bantam, login to Batam.io. Click through to your new function's page, and navigate to the 'administration' tab on left-hand menu, then click 'settings'. There your can allow your function to be published publicly, by clicking 'Enable Public Deploy'.
+
+NOTE: If you are unable to find your function, review step #1.  Do any errors appear in the console?
+
+#### 3. Re-publish the function.
+
+Update `package.json`, by changing `"bantam": { "public": false }` to `"bantam": { "public": true }`and adding `"bantam": { "publicPrice": x.xxx }`, see [pricing docs](../function-creation/pricing.md) to see your costs structure. Then redeploy (step #1). 
+
+The result should look something like this:
+
 
 ```
 {
@@ -56,3 +70,6 @@ To provide other users the ability to 'try-out' your functions, check out our [e
   "dependencies": {}
 }
 ```
+For more information about how to monetize your functions, check out our [docs here](../function-creation/making-money.md)
+
+To provide other users the ability to 'try-out' your functions, check out our [examples docs here](../function-creation/examples.md)
