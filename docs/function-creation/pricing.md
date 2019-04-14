@@ -68,3 +68,7 @@ Then, depending on the `publicPrice` you choose, your `bantam` config object wou
 Once your have finalized your function, running `bantam publish` will submit your new pricing structure.
 
 Keep in mind when publishing a config with the bantam config object `{ "bantam": { public: false } }`, your function will <b>not</b> be public to Bantam users. To make your function `PUBLIC`,set `public` to `true` before running `bantam publish`. For more information about public and private functions, check out our [docs here](../function-creation/public-functions.md)
+
+#### Updating price
+
+To protect you and your users.  Once a function is used by outside users, you cannot raise the `publicPrice` by more than 50% in a 30 day timespan. Therefore make sure you select a reasonable starting price.
