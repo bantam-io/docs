@@ -34,7 +34,7 @@ To publish a function for other developers to consume requires 3 steps. The extr
 
 #### 1. Publish the function:
 
-`publish` the function to Bantam. [Additional info](https://github.com/bantam-io/docs/blob/master/docs/function-creation/function-creation.md#step-6-make-your-function-public)
+`publish` the function to Bantam. [Additional info](../function-creation/function-creation.md#step-5-publish-your-function)
 
 #### 2. Enable Public Deploy
 
