@@ -8,7 +8,7 @@ To get started go to [https://bantam.io](https://bantam.io)
 
 #### For information regarding:
 
-- developing your own functions [click here](./function-creation/function-creation.md)
+- getting started developing your own functions [click here](./function-creation/function-creation.md)
 - creating documentation and examples of your functions [click here](./function-creation/examples.md)
 - creating a user interfaces [click here](./function-creation/interfaces.md)
 - pricing your functions [click here](./function-creation/pricing.md) and [here](./function-creation/making-money.md)
