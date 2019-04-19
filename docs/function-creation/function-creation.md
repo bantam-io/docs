@@ -42,7 +42,7 @@ bantam init
 Once you have answered the questions, navigate into the fuction and run `npm install`.
 
 ```
-cd \@bundle\function-name
+cd @bundle/function-name
 npm install
 ```
 
